@@ -69,6 +69,11 @@ button:hover {
   box-shadow: 0 0 4px 4px var(--color-primary-light);
 }
 
+.buttonChat{
+  border: 10px solid white(0, 0, 0, 0.23);
+    padding: 5px 15px;
+}
+
 .chatBox{
   padding-left: 350px;
 }
