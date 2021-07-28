@@ -3,6 +3,7 @@ import React from 'react'
 import {Switch, Route} from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import App from '../components/App/App'
+import Data from '../profile'
 import '../components/App/App.css'
 
 
@@ -35,9 +36,11 @@ export default function Router () {
                }}                
             />
             
-        <Route path='/profile'>
-            <p>Profile Page</p>
-            </Route>       
+        <Route path='/profile'
+            exact component={Data}/>   
+           
+             {/* <p>Profile Page</p>
+            </Route>         */}
 
             {/* <Route >
             <p> 404- not found</p>
