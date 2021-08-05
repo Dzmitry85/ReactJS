@@ -2,22 +2,19 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import FormControlLabel from '@material-ui/core/FormControlLabel'
 import Checkbox from '@material-ui/core/Checkbox'
-import { changeIsOnline, changeIsOnlineWithThunk } from '../../actions/profile'
-import logo from '../../logo.svg'
+import { changeIsOnline } from '../../actions/profile'
 
 export default function Profile(props) {
     const dispatch = useDispatch()
     const { age, name, isOnline } = useSelector((state) => state.profile)
 
     const handleIsOnlineChange = (event) => {
-        dispatch(changeIsOnlineWithThunk(event.target.checked))
+        dispatch(changeIsOnline(event.target.checked))
     }
 
     return (
         <div>
-             <img src={logo} className="App-logo"></img>
             <p>Profile page</p>
-
             <p>
                 <b>Name: </b>
                 {name}

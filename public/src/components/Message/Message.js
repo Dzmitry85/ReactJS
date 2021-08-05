@@ -2,8 +2,8 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 function Message(props) {
-   
-    const { nick = ' ', render = () => {}  } = props
+    const { nick = '1234id', render = () => {} /* lodash.noop */ } = props
+
     return (
         <p id={nick}>
             {props.author}: {props.text}

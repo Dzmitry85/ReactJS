@@ -8,13 +8,6 @@
   align-items: center;
 }
 
-.App-logo {
-  height: 40px;
-  pointer-events: none;
-  height: 200px;
-  width: 200px;
-}
-
 .app__title {
   padding-bottom: 36px;
 }
@@ -25,9 +18,9 @@
   width: 100%;
 }
 
-/* .app__content > * {
+.app__content > * {
   /*flex: 1;*/
-/* } */ */
+}
 
 .app__content_row {
   flex-direction: row;
@@ -53,7 +46,6 @@
   border: 2px solid var(--color-border);
   border-radius: 4px;
   margin-top: 24px;
-  box-shadow: 10px 14px 13px rgba(0, 0, 0, 0.4);
 }
 
 button {
@@ -88,20 +80,30 @@ a:hover {
 }
 
 .header {
-  margin-top: 20px;
   display: flex;
   padding: 8px;
   width: 100%;
-  box-shadow: 10px 14px 13px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.4);
 }
 
 .header a {
-  margin: 0 100px;
+  margin: 0 8px;
   text-decoration: none;
+}
+.header a:last-child {
+  margin-right: 0;
+}
+
+.header a:first-child {
+  margin-left: 0;
+}
+
+.header a:hover {
+  text-decoration: underline;
 }
 
 
-
+/* <-- Styles for MaterialUI TextField --> */
 .child__text-field label {
   color: white;
 }
@@ -128,27 +130,5 @@ a:hover {
 .child__text-field label.Mui-focused {
   color: var(--color-primary);
 }
-
-.chats {
-  display: flex;
-  padding: 24px;
-  color: white;
-  width: 100%;
- 
-}
-
-.chats__sidebar {
-  
-}
-
-.chats__sidebar__item {
-  display: flex;
-  white-space: nowrap;
-}
-
-.chats__sidebar__item .Mui-selected {
-  box-shadow: 0 0 4px white;
-  border-radius: 4px;
-  border: none;
-}
+/* <!-- Styles for MaterialUI TextField --> */
 
