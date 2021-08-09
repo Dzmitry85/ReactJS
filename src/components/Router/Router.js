@@ -6,6 +6,7 @@ import Chat from '../Chat/Chat'
 import Chats from '../Chats/Chats'
 import Profile from '../Profile/Profile'
 import Home from '../Home/Home'
+import News from '../News/Info'
 
 
 export default function Router() {
@@ -32,6 +33,8 @@ export default function Router() {
             <Route path="/profile">
                 <Profile />
             </Route>
+
+            <Route patt="/news" component={News} />          
 
             <Route>
                 <p>404: not found</p>
