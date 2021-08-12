@@ -18,7 +18,7 @@ export default function News(props){
     const dispatch = useDispatch()
 
     const loadData = () => dispatch(fetchNews())
-    // const loadDataByAxios = () => dispatch(fetchNewsByAxios())
+    
     const clearData = () => dispatch(setNewsList([]))
 
     if (status === NEWS_REQUEST_STATUS.LOADING) {
